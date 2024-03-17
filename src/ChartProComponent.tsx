@@ -106,6 +106,7 @@ const ChartProComponent: Component<ChartProComponentProps> = props => {
     getTheme: () => theme(),
     setStyles,
     getStyles: () => widget!.getStyles(),
+    getWidget: () => widget,
     setLocale,
     getLocale: () => locale(),
     setTimezone: (timezone: string) => { setTimezone({ key: timezone, text: translateTimezone(props.timezone, locale()) }) },
